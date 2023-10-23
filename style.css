@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #030202;
+    color: white;
+/*background-image: linear-gradient(#2f1c1f,#0a0a0a);*/
+
+}
+header{
+    background: url("contact.png"), rgba(0,0,0,0.7);
+    background-attachment: fixed;
+    background-blend-mode: darken;
+
+color: white;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+}
+.mainNav{
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+marquee{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Poppins";
+    background-color: rgba(211, 150, 93, 0.3);
+}
+.mainNav .logo{
+    font-family: "Josefin Slab";
+    font-size: 20pt;
+    color: white;
+}
+.mainNav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: "Poppins";
+    gap: 20px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: #d3965d;
+}
+button{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    width: fit-content;
+    color: white;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+button a{
+    color: white;
+}
+button a:hover{
+    color: black;
+}
+button:hover{
+    background-color: #d3965d;
+    color: black;
+    border: 2px solid #d3965d;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.hero h1{
+font-family: "Josefin Slab";
+font-size: 6rem;
+font-weight: 700;
+
+text-align: center;
+}
+.hero p{
+    font-family: "Poppins";
+    font-size: 15pt;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+}
+.diff{
+    background-color: white;
+    color: black;
+}
+span{
+    color:#d3965d ;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.left{
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.about .right{
+    flex:1;
+    background: url("donut.png");
+    content: " ";
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.left h2{
+    font-family: "Josefin slab";
+    font-size:3rem;
+    color: #d3965d;
+    padding: 0 60px;
+}
+.left p{
+    text-indent: 30px;
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    padding: 0px 60px;
+    line-height: 1.6rem;
+}
+.left h2 span {
+    color:#d3965d ;
+}
+
+.story .right{
+    flex:1;
+    background: url("mac.png");
+    content: " ";
+    background-attachment: fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}
+.vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: url("20230803192651_[fpdl.in]_hand-drawn-food-background_23-2148048817_normal.png"), rgba(0,0,0,0.6);
+background-blend-mode: darken;
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+.vision h2{
+    font-family: "Josefin slab";
+    font-size:3.5rem;
+    color: white;
+}
+.vision p{
+    color: white;
+    text-indent: 30px;
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.6rem;
+}
+.gallor{
+height: fit-content;
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+.gallor h2{
+    font-size: 4rem;
+    margin-top: 30px;
+    font-family: 'Josefin Sans';
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.gallery img{
+    width: 25rem;
+    height: 20rem;
+    border-radius: 15px;
+}
+
+
+.find .left{
+    flex:1;
+    background: url("kobby-mendez-w0_w3N_hG00-unsplash.jpg"), rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+    content: " ";
+    background-attachment: fixed;
+    background-size: 70%;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+.find h2{
+    font-size: 3rem;
+    margin-top: 30px;
+    font-family: 'Josefin Sans';
+}
+.find .right{
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-indent: 0;
+
+}
+.find .left p{
+    text-indent: 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+input{
+    color: white;
+    width: 20rem;
+    outline: none;
+    height: 3rem;
+    border: none;
+    border-bottom:2px solid #d3965d;
+    background-color: transparent;
+
+}
+input::placeholder{
+    color:white ;
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+}
+@media (orientation:portrait), (max-width: 1100px) {
+    
+.gallor{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    .gallor h2{
+        font-size: 4rem;
+        margin-top: 30px;
+        font-family: 'Josefin Sans';
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3 , 2fr);
+        gap: 20px;
+    }
+    .gallery img{
+        width: 15rem;
+        height: 10rem;
+        border-radius: 15px;
+    }
+  .find{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .find .left{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .find .right{
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-width:750px){
+ 
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        position: fixed;
+    }
+    .mainNav{
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    marquee{
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        font-family: "Poppins";
+        background-color: rgba(211, 150, 93, 0.3);
+    }
+    .mainNav .logo{
+        font-family: "Josefin Slab";
+        font-size: 1rem;
+        color: white;
+    }
+    .mainNav ul{
+        display:none
+    }
+.gallor{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+    .gallor h2{
+        font-size: 4rem;
+        margin-top: 30px;
+        font-family: 'Josefin Sans';
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2 , 2fr);
+        gap: 20px;
+    }
+    .gallery img{
+        width: 10rem;
+        height: 5rem;
+        border-radius: 15px;
+    }
+    button{
+        background-color: transparent;
+        outline: none;
+        border: 2px solid white;
+        padding: 5px 15px;
+        border-radius: 5px;
+        width: fit-content;
+        color: white;
+        font-family: "Poppins";
+        font-weight: 600;
+    }
+    .hero h1{
+        font-family: "Josefin Slab";
+        font-size: 4rem;
+        font-weight: 700;
+        
+        text-align: center;
+        }
+        .hero p{
+            font-family: "Poppins";
+            font-size: .8rem;
+            padding: 0px 30px;
+        }
+        .story .right{
+          display: none;
+        }
+        .story .left{
+            color: black;
+            background-color: #d3965d;
+          }
+          .story .left h2{
+            color: black;
+          }
+        .about .right{
+           display: none;
+        
+        }
+}
